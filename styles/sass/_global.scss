@@ -1,0 +1,115 @@
+// Colors
+$textColor: white;
+$secondaryFont: black;
+$menuColorBackgroundLight: #1fe1e9;
+$menuColorBackgroundMedium: #d34848;
+$backgroundSection2: #ffb33f;
+$footerColor: #5e33d1;
+
+
+// Fonts
+@mixin mainFont($mainFont){
+    font-family: 'Poppins', sans-serif;
+    font-size: $mainFont;
+}
+
+@mixin secondaryFont($secondaryFont){
+    font-family: 'Lato', sans-serif;
+    font-size: $secondaryFont;
+}
+
+// General selectors
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    @include secondaryFont(2.5rem);
+    color: $textColor;
+    letter-spacing: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    height: 100vh;
+    min-height: 605px;
+}
+
+h1 {
+    @include mainFont(5rem);
+    letter-spacing: 7px;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    @include mainFont(5rem);
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 7px;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        height: 0.2rem;
+        margin-left: 220px;
+        left: -80%;
+        top: -2rem;
+        width: 100px;
+    }
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+
+// Animation
+@keyframes createBox {
+  from {
+    transform: scale(0);
+    margin-top: -500px;
+    margin-left: -200px;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes listItems {
+  from {
+    margin-top: -500px;
+  }
+}
+

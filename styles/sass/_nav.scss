@@ -1,0 +1,194 @@
+// Header navigation 
+.mobileMenu button {
+    display: none;
+}
+
+nav ul {
+    li {
+        margin-left: 25px;
+        a {
+            text-transform: uppercase;
+            letter-spacing: 2.3px;
+            min-width: 150px;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+    .headerMenuDrop {
+        padding-top: 20px;
+        position: fixed;
+        top: -20%;
+        left: -8%;
+        z-index: 600;
+        .mobileMenu {
+            display: flex;
+            flex-direction: column;
+            button {
+                font-size: 3.5rem;
+                letter-spacing: 2.5px;
+                text-transform: uppercase;
+                display: block;
+                border: none;
+                background: none;
+                padding: 5px 20px 5px 100px;
+                border: 3px solid transparent;
+                display: flex;
+                align-items: center;
+                z-index: 50;
+                position: relative;
+                margin-top: 150px;
+                margin-left: 5%;
+                i {
+                    font-size: 4rem;
+                    margin-right: 15px;
+                }
+                span {
+                    margin-left: 5px;
+                    padding-left: 5px;
+                    border-left: 2px solid $textColor;
+                }
+            }
+        }
+
+        .mobileMenu li {
+            position: relative;
+            a {
+                display: inline-block;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color: $textColor;
+                font-weight: bold;
+                font-size: 3rem;
+                text-align: left;
+                min-width: 200px;
+            }
+        }
+
+        ul.mobileSubMenu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mobileMenu li:focus-within ul.mobileSubMenu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobileSubMenu li {
+            display: block;
+            margin: 0;
+            animation: 1.5s listItems ease-out;
+        }
+    
+        ul.mobileSubMenu li a {
+            width: 100%;
+            margin: 0;
+            text-decoration: none;
+        }
+    
+        .mobileMenu li:focus-within .middleList {
+            display: none;
+        }
+    
+        .mobileMenu li:focus-within li:nth-child(2), .mobileMenu li:focus-within li:nth-child(5)  {
+            border-top: none;
+        }
+    
+        .mobileMenu li:focus-within li:nth-child(2) {
+            border-bottom: none;
+        }
+    }
+
+    .headerMenuDrop ul.mobileSubMenu {
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        z-index: 3;
+        padding-top: 100px;
+        padding-left: 70px;
+        animation: 1s createBox ease-out;
+    }
+
+    // Menu color change
+    .colorChange1 {
+        background-color: $menuColorBackgroundLight;
+    }
+
+    .colorChange1 li:focus-within a, .colorChange1 li:hover a {
+        color: $secondaryFont;
+    }
+
+    .buttonColor1 {
+        color: $textColor;
+    }
+
+    .buttonColor2 {
+        color: $textColor;
+    }
+
+    .colorChange2 {
+        background-color: $secondaryFont;
+    }
+
+    .colorChange2 li:focus-within a, .colorChange2 li:hover a {
+        color: $menuColorBackgroundMedium;
+    }
+
+    .headerMenuDrop .mobileMenu .buttonColor2:focus-within span {
+        border-left: 2px solid $menuColorBackgroundMedium;
+    }
+
+    .buttonColor2:focus-within {
+        color: $menuColorBackgroundMedium;
+    }
+
+    .colorChange3 {
+        background-color: $secondaryFont;
+    }
+
+    .colorChange3 li:focus-within a, .colorChange3 li:hover a {
+        color: $backgroundSection2;
+    }
+
+    .headerMenuDrop .mobileMenu .buttonColor3:focus-within span {
+        border-left: 2px solid $backgroundSection2;
+    }
+
+    .buttonColor3:focus-within {
+        color: $backgroundSection2;
+    }
+
+    .buttonColor4 {
+        color: $textColor;
+    }
+
+    .colorChange4 {
+        background-color: $secondaryFont;
+    }
+
+    .colorChange4 li:focus-within a, .colorChange4 li:hover a {
+        color: $menuColorBackgroundLight;
+    }
+
+    .headerMenuDrop .mobileMenu .buttonColor4:focus-within span {
+        border-left: 2px solid $menuColorBackgroundLight;
+    }
+
+    .buttonColor4:focus-within {
+        color: $menuColorBackgroundLight;
+    }
+
+
+
+
+

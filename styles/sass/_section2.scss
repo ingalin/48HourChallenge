@@ -1,0 +1,69 @@
+// Section 2
+.section2{
+    min-height: 700px;
+    background-color: $backgroundSection2;
+    overflow: hidden;
+    span {
+        color: $backgroundSection2;
+    }
+}
+
+.clip-svg {
+    clip-path: url(#myClip);
+    width: 100%;
+    height: auto;
+}
+
+.section2Text {
+    position: relative;
+    margin-bottom: -600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section2 img {
+    z-index: 4;
+    position: relative;
+}
+
+.section2 h2, .section2 p, .section2 a {
+    position: relative;
+    z-index: 5;
+}
+
+.textSection2 {
+    width: 60%;
+    margin-top: 150px;
+}
+
+// Text color on mouse over
+.changeTextColor2 span {
+    color: white;
+    padding: 30px 0 10px 0;
+}
+
+.changeColor.changeText {
+    color: #1fe1e9;
+}
+
+.changeTextColor2P span {
+    color: black;
+    padding: 20px 0;
+}
+
+.changeColorP.changeTextP {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+// Payment
+
+.payment {
+    min-height: 1400px;
+    height: 150vh;
+    color: $secondaryFont;
+    padding: 200px 0;
+    h2 {
+        margin-bottom: 80px;
+    }
+    h3 {
+        font-weight: normal;
+        font-size: 3rem;
+        padding-bottom: 10px;
+    }
+}
+
+.addressForm {
+    input, label {
+        display: block;
+        width: 100%;
+    }
+    label {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+    input {
+        border: 4px solid transparent;
+        padding: 5px 15px;
+        outline: 1.5px solid $secondaryFont;
+    }
+}
+
+.cityPostal {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 48%;
+    }
+}
+
+input:hover, input:focus {
+    border-bottom: 4px solid $footerColor;
+}
+
+.paymnetForms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creditInfo, .contactInfo {
+    width: 48%;
+}
+
+.selectedType {
+    display: flex;
+    margin-bottom: 100px;
+    label {
+        padding: 5px 10px;
+    }
+}
+
+.basic {
+    color: $menuColorBackgroundMedium;
+}
+
+.advanced {
+    color: $backgroundSection2;
+}
+
+.pro {
+    color: $menuColorBackgroundLight;
+}
+
+.selectedType label {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.payment {
+    .downloadButton {
+        width: 250px;
+        height: 50px;
+        display: block;
+    }
+    [class*="btn-"] {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 10px 50px;
+        margin-left: 0;
+    }
+    [class*="btn-mix"] {
+        &::after {
+        padding: 10px 50px;
+        top: 0.2em;
+        }
+    }
+}
+
+.terms {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    width: 48%;
+    padding-top: 50px;
+    a {
+        font-weight: 700;
+        color: $footerColor;
+    }
+}
+
+.paymentNav button {
+    color: $secondaryFont;
+}
+
+.paymentNav .mobileMenu button span {
+    border-left: 2px solid $secondaryFont;
+}
+

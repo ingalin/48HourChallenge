@@ -1,0 +1,47 @@
+// Section 4
+.section4 {
+    background-color: $menuColorBackgroundLight;
+    padding-top: 30px;
+    p {
+        font-weight: 1.8rem;
+        letter-spacing: 1px;
+        color: $secondaryFont;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    figure {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        margin: -40px 50px 0 0;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            max-height: 100%;
+        }
+    }
+    i {
+        color: $secondaryFont;
+        font-size: 1.8rem;
+    }
+    span {
+        color: $menuColorBackgroundLight;
+    }
+}
+
+.textImgSection4 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eachReview {
+    width: 24%;
+}

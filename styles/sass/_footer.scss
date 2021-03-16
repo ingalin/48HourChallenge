@@ -1,0 +1,60 @@
+// Footer
+.download {
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        color: $menuColorBackgroundMedium;
+    }
+    p {
+        font-size: 3.5rem;
+    }
+    span {
+        border-left: 5px solid $menuColorBackgroundMedium;
+        margin-left: 5px;
+        padding-left: 8px;
+    }
+    a {
+        margin-top: 40px;
+    }
+}
+
+.footerFirstpart {
+    background-color: $secondaryFont;
+}
+
+.footerSecondPart {
+    background-color: $footerColor;
+}
+
+.contactCopyFooter {
+    display: flex;
+    height: 50vh;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    h4 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    p{
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    span {
+        border-left: 2px solid $textColor;
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+}

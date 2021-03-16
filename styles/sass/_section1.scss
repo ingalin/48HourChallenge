@@ -1,0 +1,111 @@
+// Section 1 & 2
+.section1, .section2 {
+    background-color: $menuColorBackgroundMedium;
+    padding: 30px 0;
+    button {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        width: 100%;
+        text-align: right;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            max-height: 100%;
+        }
+    }
+    p {
+        color: $secondaryFont;
+        font-size: 3.5rem;
+        padding-bottom: 50px;
+    }
+}
+
+.textImg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.textSec1 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.imgSec1 {
+    width: 40%;
+}
+
+// Buttons Section 1
+
+.section1 .button, .section2 .button, .section4 .button, .eachPrice .button {
+  display: block;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+          appearance: none;
+  background-color: $textColor;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 250px;
+  font-size: 1.6rem;
+  border: none;
+  color: $menuColorBackgroundMedium;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+  font-weight: bold;
+}
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+.button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.button:hover::before, .button:focus::before {
+  --size: 400px;
+}
+
+.button:hover, .button:focus {
+    color: white;
+}
+
+.tryOutButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section1 .demo, .section2 .demo, .eachPrice .demo {
+    padding: 20px 40px;
+    font-size: 1.8rem;
+}
+
+// Cursor image
+.section1 .png {
+  cursor: url("../images/click.png"), auto;
+}
+
+// Cursor image
+.section2 .png {
+  cursor: url("../images/reveal.png"), auto;
+}
+
+

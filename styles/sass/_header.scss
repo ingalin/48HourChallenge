@@ -1,0 +1,128 @@
+// /* Header */
+header {
+    position: relative;
+}
+
+// Header text
+.headerText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        text-align: center;
+    }
+    span {
+        display: block;
+    }
+}
+
+
+// Slides
+.skitter-large { 
+    max-width: 100%; 
+}
+.skitter.skitter-large.with-dots {
+    z-index: 10;
+}
+
+.skitter .info_slide_dots {
+    bottom: 50px;
+}
+
+.skitter .info_slide_dots .image_number {
+    border: 1px $textColor solid;
+    background-color: $secondaryFont;
+}
+
+.skitter .info_slide_dots .image_number.image_number_select {
+    background-color: $textColor;
+}
+
+.skitter.with-dots {
+    margin-bottom: 0;
+}
+
+// Button colorful
+[class*="btn-"] {
+  outline:0;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 4px;
+  overflow: hidden;
+  position: relative; 
+  padding: 2em 3em;
+  margin: 4em;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 500ms ease-in-out;
+  &::after, &::before { 
+    content: "";
+    position: absolute;
+  }
+  &:hover, &:focus {
+    background: rgb(255, 255, 255);
+  }
+}
+
+[class*="btn-mix"] {
+  &::after {
+    border-radius: 120px;
+    content: attr(data-text);
+    color: #fff;
+    padding: 1.6em 2.5em;
+    top: 0.4em;
+    left: 0.5em;
+    -moz-user-select: none;
+    user-select: none;
+    user-drag: none;
+  }
+  &::before {
+    background: transparent;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 1em 2em 3em rgb(255, 50, 0),
+                4em 0em 2em 2em rgb(155, 50, 0),
+                -4em -2em 2em 2em rgb(255, 0, 150),
+                -4em 2em 2em 4em rgb(0, 0, 150),
+                0 -3em 2em 3em rgb(120, 250, 0),
+                2em -1em 2em 2em rgb(50, 10, 200);
+    width: 0;
+    height: 0;
+    animation: mix 5s linear infinite;
+  }
+}
+
+@keyframes mix {
+  
+  30% {
+    box-shadow: 0 -1em 2em 3em rgb(255, 0, 200),
+                4em -1em 2em 3em rgb(255, 50, 0),
+                -4em 2em 3em 2em rgb(155, 200, 0),
+                -4em -2em 2em 2em rgb(200, 0, 150),
+                0 3em 2em 2em rgb(20, 250, 0),
+                2em 1em 2em 2em rgb(50, 10, 250);
+  }
+  
+  60% {
+    box-shadow: 2em 1em 2em 3em rgb(55, 0, 200),
+                3em 1em 2em 3em rgb(25, 150, 0),
+                3em -2em 3em 3em rgb(155, 200, 0),
+                -4em 2em 2em 3em rgb(200, 0, 50),
+                0 -3em 2em 3em rgb(200, 250, 0),
+                -2em 1em 2em 3em rgb(50, 210, 250);
+  }
+}
+
+.btn-mix-noborder {
+  &::after {
+    background: transparent !important;
+  }
+}
+

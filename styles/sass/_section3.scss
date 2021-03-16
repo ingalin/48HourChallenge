@@ -1,0 +1,71 @@
+// Section 3
+.section3, .pricesPerks {
+    background-color: $secondaryFont;
+    min-height: 650px;
+    h2 {
+        margin: 100px 0 60px;
+    }
+    p {
+        font-weight: 1.8rem;
+        letter-spacing: 1px;
+        color: $textColor;
+    }
+}
+
+.section3Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section3TextGroups {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 24%;
+    }
+}
+
+.text1 h3{
+    color: $menuColorBackgroundMedium;
+    &::after{
+        background: $menuColorBackgroundMedium;
+    }
+}
+
+.text2 h3{
+    color: $menuColorBackgroundLight;
+    &::after{
+        background: $menuColorBackgroundLight;
+    }
+}
+
+.text3 h3{
+    color: $backgroundSection2;
+    &::after{
+        background: $backgroundSection2;
+    } 
+}
+
+
+// Colorful button Section 3
+.section3 {
+    a {
+        width: 250px;
+        height: 45px;
+    }
+    [class*="btn-"] {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+    [class*="btn-mix"] {
+        &::after {
+        padding: 10px 40px;
+        top: 0.1em;
+        }
+    }
+}

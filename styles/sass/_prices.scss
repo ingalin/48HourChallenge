@@ -1,0 +1,127 @@
+// Prices
+.prices {
+    padding-top: 40px;
+    background-color: $secondaryFont;
+    height: 170vh;
+    min-height: 1400px;
+    p {
+        font-size: 3.5rem;
+    }
+}
+
+.priceHeader {
+    padding-bottom: 100px;
+}
+
+.priceInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 200px;
+}
+
+.priceLists {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 30%;
+    }
+    i {
+        font-size: 1.6rem;
+        margin-right: 10px;
+    }
+    li {
+        letter-spacing: 2.5px;
+        font-size: 2.7rem;
+    }
+    a {
+        margin-top: 30px;
+    }
+}
+
+.decorPriceHeader {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        height: 0.2rem;
+        width: 100px;
+    }
+}
+
+.eachPrice1 .decorPriceHeader {
+    &::before{
+        background: $menuColorBackgroundMedium;
+    }
+}
+
+.eachPrice2 .decorPriceHeader {
+    &::before{
+        background: $backgroundSection2;
+    }
+}
+
+.eachPrice3 .decorPriceHeader {
+    &::before{
+        background: $menuColorBackgroundLight;
+    }
+}
+
+.eachPrice1 h4, .eachPrice1 p {
+    color: $menuColorBackgroundMedium;
+}
+
+.eachPrice2 h4, .eachPrice2 p {
+    color: $backgroundSection2;
+}
+
+.eachPrice3 h4, .eachPrice3 p {
+    color: $menuColorBackgroundLight;
+}
+
+.eachPrice h4 {
+    font-size: 3rem;
+}
+
+.eachPrice p {
+    font-size: 10rem;
+    font-weight: 700;
+}
+
+.eachPrice1 .button {
+    background-color: $menuColorBackgroundMedium;
+    color: $textColor;
+}
+
+.eachPrice2 .button {
+    background-color: $backgroundSection2;
+    color: $textColor;
+}
+
+.eachPrice3 .button {
+    background-color: $menuColorBackgroundLight;
+    color: $textColor;
+}
+
+.pricesPerks {
+    background-color: $menuColorBackgroundMedium;
+    .section3Info {
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        h2 {
+            margin-bottom: 70px;
+        }
+        h3 {
+            color: $textColor;
+            &::after{
+                background: $textColor;
+            }
+        }
+        p {
+            color: $secondaryFont;
+        }
+    }
+}

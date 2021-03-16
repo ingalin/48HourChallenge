@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXPICON</title>
+
+  <!-- Skitter Styles -->
+  <link href="dist/skitter.css" type="text/css" media="all" rel="stylesheet" />
+
+  <script src='https://code.jquery.com/jquery-3.5.1.js' integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc='
+    crossorigin='anonymous'></script>
+  <script src="script.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+      ">
+  <!-- Skitter JS -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="dist/jquery.skitter.min.js"></script>
+  <!-- Fontawsome -->
+  <script src="https://kit.fontawesome.com/d50e3b07e2.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="wrapper headerMenuDrop">
+      <ul class="mobileMenu">
+        <li>
+          <button class="menuButton buttonColor1">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+            exp<span>con</span>
+          </button>
+          <ul class="mobileSubMenu colorChange1" id="block">
+            <li>
+              <a href="#about"><span class="activeNav">what is it</span></a>
+            </li>
+            <li>
+              <a href="#perks">perks</a>
+            </li>
+            <li>
+              <a href="prices.html">pricing</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div id="content">
+      <div class="skitter-large-box">
+        <div class="skitter skitter-large with-dots">
+          <ul>
+            <li><a href="#cube"><img src="images/001.jpg" alt="Photo of concert" class="blind" /></a>
+            </li>
+            <li><a href="#cubeRandom"><img src="images/002.jpg" alt="Photo of concert" class="blind" /></a>
+            </li>
+            <li><a href="#block"><img src="images/003.jpg" alt="Photo of concert" class="blind" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Header text -->
+    <div class="wrapper headerText">
+      <h1>interactive concert experience</h1>
+      <p>Experience your favourite artists like never <span>before and from the comfort of your own home.</span></p>
+      <a href="prices.html" class="btn-mix-noborder" data-text="try it now">try it now</a>
+    </div>
+  </header>
+  <main>
+    <section class="section1" id="about">
+      <div class="wrapper">
+        <div class="tryOutButton">
+          <a href="prices.html" class="button">
+            <span>try it now</span>
+          </a>
+        </div>
+        <div class="textImg">
+          <div class="textSec1">
+            <h2>superior sound</h2>
+            <p>Experience live versions of your favourite songs</p>
+            <a href="#" class="button demo">
+              <span>see demo</span>
+            </a>
+          </div>
+          <div class="imgSec1">
+            <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous"></audio>
+            <button data-playing="false" class="tape-controls-play  png" role="switch" aria-checked="false"
+              aria-label="play or pause music">
+              <img src="images/imgbin_computer-speakers-jbl-es-series-es20bk-speakers-png.png"
+                alt="Photo of music speakers" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="wrapper section2Text">
+        <div class="tryOutButton">
+          <a href="prices.html" class="button">
+            <span>try it now</span>
+          </a>
+        </div>
+        <div class="textSection2">
+          <div class="textSec2">
+            <!-- Change text color on mouseover -->
+            <h2 class="changeTextColor">front row seats</h2>
+            <h2 class="changeTextColor2" aria-label="front row seats"></h2>
+            <p class="changeTextColorP">Experience concerts up close and and personal.</p>
+            <p class="changeTextColor2P" aria-label="Experience concerts up close and and personal."></p>
+            <a href="#" class="button demo">
+              <span>see demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <img class="clip-svg png" src="images/sam-moqadam.jpg" alt="Photo of the Concert">
+      <svg version="1.1" id="circle" width="0" height="0">
+        <defs>
+          <clipPath id="myClip">
+            <circle cx="1400" cy="800" r="300" />
+            <!-- New circle paths go here -->
+          </clipPath>
+        </defs>
+      </svg>
+    </section>
+    <section class="section3" id="perks">
+      <div class="wrapper section3Info">
+        <a href="prices.html" class="btn-mix-noborder" data-text="try it now" aria-label="try it now"></a>
+        <div>
+          <h2>perks</h2>
+          <div class="section3TextGroups">
+            <div class="text1">
+              <h3>Subscription Payment Model</h3>
+              <p>No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+            </div>
+            <div class="text2">
+              <h3>No Fee Cancelation Policy</h3>
+              <p>No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+            </div>
+            <div class="text3">
+              <h3>Subscription Payment Model</h3>
+              <p>No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="wrapper section2Text">
+        <div class="tryOutButton">
+          <a href="prices.html" class="button">
+            <span>try it now</span>
+          </a>
+        </div>
+        <div class="textImgSection4">
+          <figure>
+            <img src="images/music-speaker.png" alt="Photo of music speakers" />
+          </figure>
+          <div class="secFourText">
+            <h2>reviews</h2>
+            <div class="reviews">
+              <div class="eachReview">
+                <div class="stars" aria-label="Five stars">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+                <h4>Artist</h4>
+                <p>"Love it, it's the Best! I can't live without it!"</p>
+              </div>
+              <div class="eachReview">
+                <div class="stars" aria-label="Five stars">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+                <h4>producer</h4>
+                <p>"Love it, it's the Best! I can't live without it!"</p>
+              </div>
+              <div class="eachReview">
+                <div class="stars" aria-label="Five stars">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+                <h4>music fan</h4>
+                <p>"Love it, it's the Best! I can't live without it!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footerFirstpart">
+      <div class="download wrapper">
+        <div>
+          <h2>get exp<span>con</span> now</h2>
+          <p>Purchase and download the app</p>
+        </div>
+        <a href="prices.html" class="btn-mix-noborder" data-text="try it now">try it now</a>
+      </div>
+    </div>
+    <div class="footerSecondPart">
+      <div class="wrapper contactCopyFooter">
+        <p>
+          <i class="fas fa-envelope"></i>
+          support@experienceconcerts.co
+        </p>
+        <div class="copyright">
+          <h4>exp<span>con</span></h4>
+          <p>2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

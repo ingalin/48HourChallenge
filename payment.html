@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPICON</title>
+    <script src='https://code.jquery.com/jquery-3.5.1.js'
+        integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=' crossorigin='anonymous'></script>
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/d50e3b07e2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="wrapper headerMenuDrop paymentNav">
+            <ul class="mobileMenu">
+                <li>
+                    <button class="menuButton buttonColor2">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                        exp<span>con</span>
+                    </button>
+                    <ul class="mobileSubMenu colorChange2" id="block">
+                        <li>
+                            <a href="index.html#about"><span class="activeNav">what is it</span></a>
+                        </li>
+                        <li>
+                            <a href="index.html#perks">perks</a>
+                        </li>
+                        <li>
+                            <a href="prices.html">pricing</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="payment wrapper">
+            <h2>payment</h2>
+            <h3>1. Select your plan</h3>
+            <form action="#" method="#" name="payment" autocomplete="off" class="selectedType">
+                <div>
+                    <input type="radio" id="basic" name="payment" value="basic" required />
+                    <label for="basic" class="basic">Basic</label>
+                </div>
+                <div>
+                    <input type="radio" id="advanced" name="payment" value="advanced" required />
+                    <label for="advanced" class="advanced">Advanced</label>
+                </div>
+                <div>
+                    <input type="radio" id="pro" name="payment" value="pro" required />
+                    <label for="pro" class="pro">Pro</label>
+                </div>
+                <button class="srOnly" type="submit">Submit</button>
+            </form>
+            <div class="paymnetForms">
+                <div class="contactInfo">
+                    <h3>2. Billing Information</h3>
+                    <form action="#" method="#" name="form" class="addressForm">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="address">Billing Address</label>
+                        <input type="text" id="address" name="address">
+                        <div class="cityPostal">
+                            <div>
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city">
+                            </div>
+                            <div>
+                                <label for="postalCode">Postal Code</label>
+                                <input type="text" id="postalCode" name="postalCode">
+                            </div>
+                        </div>
+                        <label for="country">Country</label>
+                        <input type="email" id="country" name="country">
+                        <button class="submit srOnly" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="creditInfo">
+                    <h3>3. Credit Card Information</h3>
+                    <form action="#" method="#" name="form" class="addressForm">
+                        <label for="holder">cardholder's name</label>
+                        <input type="text" id="holder" name="holder">
+
+                        <label for="card">card number</label>
+                        <input type="text" id="card" name="card">
+
+                        <div class="cityPostal">
+                            <div>
+                                <label for="city">Month</label>
+                                <input type="number" id="city" name="city">
+                            </div>
+                            <div>
+                                <label for="year">Year</label>
+                                <input type="number" id="year" name="year">
+                            </div>
+                        </div>
+                        <label for="cvv">CVV</label>
+                        <input type="number" id="cvv" name="cvv">
+                        <button class="submit srOnly" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <p class="terms">By continuing, I acknowledge that I have read and agree to the <a href="#">Terms of
+                        Service</a> & <a href="#">Privacy Policy</a></p>
+                <a href="#" class="btn-mix-noborder downloadButton" data-text="Download" aria-label="download"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSecondPart">
+            <div class="wrapper contactCopyFooter">
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    support@experienceconcerts.co
+                </p>
+                <div class="copyright">
+                    <h4>exp<span>con</span></h4>
+                    <p>2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
