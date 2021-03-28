@@ -49,24 +49,26 @@ header {
 
 // Button colorful
 [class*="btn-"] {
-  outline:0;
+  outline: 0;
   border-radius: 50px;
-  font-size: 0.8em;
-  font-weight: 700;
   letter-spacing: 4px;
   overflow: hidden;
   position: relative; 
-  padding: 2em 3em;
-  margin: 4em;
+  margin-top: 30px;
   text-transform: uppercase;
   -webkit-tap-highlight-color: transparent;
   transition: all 500ms ease-in-out;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 10px 40px;
+  border: 1px solid transparent;
   &::after, &::before { 
     content: "";
     position: absolute;
   }
   &:hover, &:focus {
-    background: rgb(255, 255, 255);
+    background: white;
+    border: 1px solid white;
   }
 }
 
@@ -74,13 +76,13 @@ header {
   &::after {
     border-radius: 120px;
     content: attr(data-text);
-    color: #fff;
-    padding: 1.6em 2.5em;
-    top: 0.4em;
-    left: 0.5em;
+    color: white;
+    top: 1.4rem;
+    left: 0.5rem;
     -moz-user-select: none;
     user-select: none;
     user-drag: none;
+    padding: 10px 40px 10px 52px;
   }
   &::before {
     background: transparent;
@@ -97,6 +99,11 @@ header {
     height: 0;
     animation: mix 5s linear infinite;
   }
+}
+
+.btn-mix-noborder {
+    width: 270px;
+    height: 80px;
 }
 
 @keyframes mix {
