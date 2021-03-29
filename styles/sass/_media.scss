@@ -10,7 +10,7 @@
 
     .headerMenuDrop .mobileMenu button {
         padding-left: 40px;
-        margin-top: 130px;
+        margin-top: 110px;
     }
 
     // Global
@@ -140,6 +140,10 @@
     }
 
     // Section 4
+    .section4 {
+        min-height: 750px;
+    }
+
     .textImgSection4 {
         width: 100%;
         p {
@@ -170,6 +174,7 @@
     // Global
     h1 {
         font-weight: bold;
+        margin: 30px 0 5px;
     }
 
     h2 {
@@ -188,7 +193,7 @@
     // Section 1
     .section1 {
         height: 100vh;
-        min-height: 600px;
+        min-height: 700px;
     }
     
     .textImg {
