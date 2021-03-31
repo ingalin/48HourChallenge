@@ -1488,6 +1488,37 @@ input:hover, input:focus {
   footer .download div {
     width: 100%;
   }
+  .priceInfo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .priceHeader {
+    padding-bottom: 30px;
+  }
+  .prices .testAppText {
+    font-size: 2.5rem;
+  }
+  .priceInfo {
+    padding-bottom: 30px;
+  }
+  .priceLists {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .priceLists div {
+    width: 300px;
+    padding: 30px 20px;
+  }
+  .section3TextGroups h3 {
+    font-size: 2.5rem;
+  }
+  .section3TextGroups div {
+    width: 30%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1548,6 +1579,32 @@ input:hover, input:focus {
   .download p {
     font-size: 2.5rem;
   }
+  .prices {
+    min-height: 1000px;
+  }
+  .prices .testAppText {
+    font-size: 2.2rem;
+  }
+  .priceHeader {
+    padding-bottom: 20px;
+  }
+  .priceLists div {
+    width: 250px;
+    padding: 20px;
+  }
+  .eachPrice .button {
+    width: 100%;
+  }
+  .eachPrice li {
+    font-size: 2rem;
+    padding-top: 4px;
+  }
+  .eachPrice p {
+    font-size: 6rem;
+  }
+  .eachPrice h4 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1570,7 +1627,7 @@ input:hover, input:focus {
   }
   .section1 {
     height: 100vh;
-    min-height: 700px;
+    min-height: 720px;
   }
   .textImg {
     -webkit-box-orient: vertical;
@@ -1642,9 +1699,21 @@ input:hover, input:focus {
   .copyright p {
     text-align: center;
   }
-  .email {
+  .email, .contactCopyFooter p {
     font-size: 2rem;
     letter-spacing: 0.2rem;
+  }
+  .prices {
+    min-height: 1700px;
+  }
+  .pricesPerks {
+    min-height: 840px;
+  }
+  .pricesPerks p {
+    font-size: 2.2rem;
+  }
+  .pricesPerks .section3Info h2 {
+    margin: 20px 0 20px;
   }
 }
 
@@ -1664,7 +1733,7 @@ input:hover, input:focus {
   .section3 p {
     font-size: 1.8rem;
   }
-  .email {
+  .email, .contactCopyFooter p {
     font-size: 1.8rem;
     letter-spacing: 0.15rem;
   }

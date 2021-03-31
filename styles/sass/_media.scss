@@ -90,6 +90,43 @@
             width: 100%;
         }
     }
+
+    // Prices
+    .priceInfo {
+        justify-content: center;
+    }
+
+    .priceHeader {
+        padding-bottom: 30px;
+    }
+
+    .prices .testAppText {
+        font-size: 2.5rem;
+    }
+
+    .priceInfo {
+        padding-bottom: 30px;
+    }
+
+    .priceLists {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .priceLists div {
+        width: 300px;
+        padding: 30px 20px;
+    }
+
+    // Perks
+    .section3TextGroups {
+        h3 {
+            font-size: 2.5rem;
+        }
+        div {
+            width: 30%;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -163,6 +200,43 @@
     .download p {
         font-size: 2.5rem;
     }
+
+    // Prices
+
+    .prices {
+        min-height: 1000px;
+    }
+
+    .prices .testAppText {
+        font-size: 2.2rem;
+    }
+
+    .priceHeader {
+        padding-bottom: 20px;
+    }
+
+    .priceLists div {
+        width: 250px;
+        padding: 20px;
+    }
+
+    .eachPrice .button {
+        width: 100%;
+    }
+
+    .eachPrice li {
+        font-size: 2rem;
+        padding-top: 4px;
+    }
+
+    .eachPrice {
+        p {
+            font-size: 6rem;
+        }
+        h4 {
+            font-size: 3rem;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -193,7 +267,7 @@
     // Section 1
     .section1 {
         height: 100vh;
-        min-height: 700px;
+        min-height: 720px;
     }
     
     .textImg {
@@ -271,9 +345,25 @@
         text-align: center;
     }
 
-    .email {
+    .email, .contactCopyFooter p  {
         font-size: 2rem;
         letter-spacing: 0.2rem;
+    }
+
+    .prices {
+        min-height: 1700px;
+    }
+
+    // Perks
+    .pricesPerks {
+        min-height: 840px;
+        p {
+            font-size: 2.2rem;
+        }
+    }
+
+    .pricesPerks .section3Info h2 {
+        margin: 20px 0 20px;
     }
 }
 
@@ -301,7 +391,7 @@
     }
 
     // Footer
-    .email {
+    .email, .contactCopyFooter p {
         font-size: 1.8rem;
         letter-spacing: 0.15rem;
     }
