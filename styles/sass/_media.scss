@@ -92,6 +92,10 @@
     }
 
     // Prices
+    .prices {
+        min-height: 1550px;
+    }
+
     .priceInfo {
         justify-content: center;
     }
@@ -118,6 +122,10 @@
         padding: 30px 20px;
     }
 
+    .priceHeader h2 {
+        margin-top: 200px;
+    }
+
     // Perks
     .section3TextGroups {
         h3 {
@@ -126,6 +134,17 @@
         div {
             width: 30%;
         }
+    }
+
+    // Payment
+    .payment h3 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 945px) {
+    .payment .contactInfoDetails {
+        font-size: 1.8rem;
     }
 }
 
@@ -204,7 +223,7 @@
     // Prices
 
     .prices {
-        min-height: 1000px;
+        min-height: 1350px;
     }
 
     .prices .testAppText {
@@ -235,6 +254,31 @@
         }
         h4 {
             font-size: 3rem;
+        }
+    }
+
+    // Payment
+    .paymnetForms {
+        flex-direction: column;
+    }
+
+    .creditInfo, .contactInfo {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .payment .contactInfoDetails {
+        font-size: 2.4rem;
+    }
+
+    .selectedType {
+        margin-bottom: 30px;
+    }
+
+    .payment {
+        padding-top: 100px;
+        h2 {
+            margin-bottom: 30px;
         }
     }
 }
@@ -350,9 +394,13 @@
         letter-spacing: 0.2rem;
     }
 
+    // Prices
+
     .prices {
-        min-height: 1700px;
+        min-height: 1900px;
     }
+
+
 
     // Perks
     .pricesPerks {
@@ -365,9 +413,14 @@
     .pricesPerks .section3Info h2 {
         margin: 20px 0 20px;
     }
+
+    // Payment
+    .terms {
+        width: 100%;
+    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 455px) {
     // Global
     h1 {
         font-size: 3.3rem;
@@ -394,5 +447,22 @@
     .email, .contactCopyFooter p {
         font-size: 1.8rem;
         letter-spacing: 0.15rem;
+    }
+
+    // Payment
+    .selectedType {
+        flex-direction: column;
+        margin-bottom: 10px;
+        div {
+            margin-top: 10px;
+        }
+    }
+
+    .payment .contactInfoDetails {
+        line-height: 3rem;
+    }
+
+    .payment {
+        min-height: 1500px;
     }
 }

@@ -1292,7 +1292,7 @@ nav ul li a {
 
 .payment h3 {
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding-bottom: 10px;
 }
 
@@ -1488,6 +1488,9 @@ input:hover, input:focus {
   footer .download div {
     width: 100%;
   }
+  .prices {
+    min-height: 1550px;
+  }
   .priceInfo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1513,11 +1516,23 @@ input:hover, input:focus {
     width: 300px;
     padding: 30px 20px;
   }
+  .priceHeader h2 {
+    margin-top: 200px;
+  }
   .section3TextGroups h3 {
     font-size: 2.5rem;
   }
   .section3TextGroups div {
     width: 30%;
+  }
+  .payment h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 945px) {
+  .payment .contactInfoDetails {
+    font-size: 1.8rem;
   }
 }
 
@@ -1580,7 +1595,7 @@ input:hover, input:focus {
     font-size: 2.5rem;
   }
   .prices {
-    min-height: 1000px;
+    min-height: 1350px;
   }
   .prices .testAppText {
     font-size: 2.2rem;
@@ -1604,6 +1619,28 @@ input:hover, input:focus {
   }
   .eachPrice h4 {
     font-size: 3rem;
+  }
+  .paymnetForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creditInfo, .contactInfo {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .payment .contactInfoDetails {
+    font-size: 2.4rem;
+  }
+  .selectedType {
+    margin-bottom: 30px;
+  }
+  .payment {
+    padding-top: 100px;
+  }
+  .payment h2 {
+    margin-bottom: 30px;
   }
 }
 
@@ -1704,7 +1741,7 @@ input:hover, input:focus {
     letter-spacing: 0.2rem;
   }
   .prices {
-    min-height: 1700px;
+    min-height: 1900px;
   }
   .pricesPerks {
     min-height: 840px;
@@ -1715,9 +1752,12 @@ input:hover, input:focus {
   .pricesPerks .section3Info h2 {
     margin: 20px 0 20px;
   }
+  .terms {
+    width: 100%;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 455px) {
   h1 {
     font-size: 3.3rem;
     line-height: 4rem;
@@ -1736,5 +1776,21 @@ input:hover, input:focus {
   .email, .contactCopyFooter p {
     font-size: 1.8rem;
     letter-spacing: 0.15rem;
+  }
+  .selectedType {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .selectedType div {
+    margin-top: 10px;
+  }
+  .payment .contactInfoDetails {
+    line-height: 3rem;
+  }
+  .payment {
+    min-height: 1500px;
   }
 }
